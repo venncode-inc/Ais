@@ -1,0 +1,63 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f2f5;
+}
+
+.container {
+    text-align: center;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+
+#videoElement {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    background-color: #333;
+    margin: 1rem 0;
+    transform: scaleX(-1); /* Membalik video agar terlihat seperti cermin */
+}
+
+.controls button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+#startButton {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#stopButton {
+    background-color: #f44336;
+    color: white;
+}
+
+#log {
+    margin-top: 1rem;
+    text-align: left;
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#status {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #555;
+}
